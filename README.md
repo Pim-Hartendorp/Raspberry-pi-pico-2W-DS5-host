@@ -79,7 +79,10 @@ export PICO_SDK_PATH=/path/to/pico-sdk
 
 ### 3. Build the Project
 
-The Pico extension may auto-configure CMake. Otherwise:
+The Pico extension may auto-build CMake. if not, select a kit using this comand in the VSCode search bar: **> CMake: Select a Kit**
+after this press ctrl + shift + B to build the project.
+
+Otherwise:
 
 ```bash
 mkdir build && cd build
@@ -118,7 +121,7 @@ int main(void) {
     DS5_init(remote_addr, false);
 
     while (true) {
-        int8_t lx = DS5_left_joystick_X_axis(5);
+        int8_t lx = DS5_left_joystick_X_axis(5); // the deadzone is 5 percent in this case so the outputs values at 6
         int8_t ly = DS5_left_joystick_Y_axis(5);
         bool cross = DS5_cross_button();
         printf("LX=%d, LY=%d, Cross=%d\n", lx, ly, cross);
@@ -169,7 +172,13 @@ int main(void) {
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+This code (and any modifications) is distributed under the following terms, as originally authored by BlueKitchen GmbH:
+
+> **BlueKitchen Non‑Commercial BSD‑Style License**  
+> (Full text in [LICENSE](./LICENSE))
+
+You may redistribute and modify the source as long as you retain the copyright
+notice, conditions, and disclaimer.  Any use must be for non‑commercial, personal benefit only.
 
 ---
 
