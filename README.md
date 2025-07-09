@@ -26,7 +26,20 @@ This project enables Bluetooth connectivity between a PlayStation 5 DualSense co
 ## Setup Instructions
 
 ### 1. Clone the Repository
+
+#### Linux
 ```bash
-git clone https://github.com/yourusername/pico-dualsense-interface.git
-cd pico-dualsense-interface
+git clone https://github.com/Pim-Hartendorp/Raspberry-pi-pico-2W-DS5-host
+cd Raspberry-pi-pico-2W-DS5-host
 ```
+
+### 2. Set up Pico SDK
+this should be set propperly by default. if not here are some things to look at:
+
+1. is the pico SDK installed trough the Raspberry Pi Pico extention for VSCode?
+2. try importing the project trough this same extention
+3. if those dont work, here is a manual fix:
+```bash
+export PICO_SDK_PATH=/path/to/pico-sdk
+```
+
