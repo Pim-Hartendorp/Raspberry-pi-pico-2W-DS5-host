@@ -66,6 +66,7 @@ This is usually handled by the Pico extension for VS Code. If not:
 * If the Pico SDK is a Git submodule, run:
 
   ```bash
+  git submodule update --init --recursive
   ```
 
 git submodule update --init --recursive
