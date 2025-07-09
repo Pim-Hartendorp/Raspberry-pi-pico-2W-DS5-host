@@ -69,13 +69,10 @@ This is usually handled by the Pico extension for VS Code. If not:
   git submodule update --init --recursive
   ```
 
-git submodule update --init --recursive
-
-````
 - Otherwise, set the `PICO_SDK_PATH` environment variable:
   ```bash
-export PICO_SDK_PATH=/path/to/pico-sdk
-````
+  export PICO_SDK_PATH=/path/to/pico-sdk
+  ````
 
 ### 3. Build the Project
 
