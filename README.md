@@ -63,13 +63,7 @@ cd Raspberry-pi-pico-2W-DS5-host
 
 This is usually handled by the Pico extension for VS Code. If not:
 
-* If the Pico SDK is a Git submodule, run:
-
-  ```bash
-  git submodule update --init --recursive
-  ```
-
-- Otherwise, set the `PICO_SDK_PATH` environment variable:
+- Set the `PICO_SDK_PATH` environment variable:
   ```bash
   export PICO_SDK_PATH=/path/to/pico-sdk
   ````
