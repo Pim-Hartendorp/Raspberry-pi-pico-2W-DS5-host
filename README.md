@@ -79,8 +79,8 @@ export PICO_SDK_PATH=/path/to/pico-sdk
 
 ### 3. Build the Project
 
-The Pico extension may auto-build CMake. if not, select a kit using this comand in the VSCode search bar: **> CMake: Select a Kit**
-after this press ctrl + shift + B to build the project.
+The Pico extension may auto-build CMake. if not, select a kit using this comand in the VSCode search bar: 
+**> CMake: Select a Kit** after this press ctrl + shift + B to build the project.
 
 Otherwise:
 
